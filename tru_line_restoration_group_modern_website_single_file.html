@@ -1,0 +1,587 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b1b2a" />
+
+  <title>TruLine Restoration Group | Water Mitigation & Reconstruction</title>
+  <meta name="description" content="TruLine Restoration Group provides calm, professional water damage mitigation and reconstruction. Fast documentation. Insurance-ready estimates. Serving Mississippi and surrounding areas." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TruLine Restoration Group" />
+  <meta property="og:description" content="Water mitigation & reconstruction. Fast documentation. Insurance-ready estimates." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://truline-rg.pro" />
+  <meta property="og:image" content="/og.jpg" />
+
+  <!-- Basic favicon placeholders (replace with real files) -->
+  <link rel="icon" href="/favicon.ico" />
+
+  <!-- Minimal, modern typography (system + optional Google font) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg: #fbfbfa;
+      --ink: #0b1b2a; /* deep navy */
+      --muted: #44505d;
+      --line: rgba(11,27,42,.12);
+      --card: #ffffff;
+      --soft: rgba(11,27,42,.04);
+      --accent: #0b1b2a;
+      --radius: 18px;
+      --shadow: 0 16px 40px rgba(11,27,42,.10);
+    }
+
+    *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    .container{ width:min(1120px, 92vw); margin:0 auto; }
+
+    /* Header */
+    header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background: color-mix(in srgb, var(--bg) 92%, white 8%);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding: 14px 0;
+      gap: 14px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      letter-spacing:-0.02em;
+    }
+    .logo{
+      width:34px;height:34px;
+      border-radius: 12px;
+      background: var(--ink);
+      display:grid;
+      place-items:center;
+      color:white;
+      font-weight:600;
+      font-size:14px;
+    }
+    .brand strong{ font-weight:600; }
+    .brand span{ color:var(--muted); font-weight:400; }
+
+    nav ul{ list-style:none; display:flex; gap:18px; padding:0; margin:0; align-items:center; }
+    nav a{ color:var(--muted); font-size:14px; padding:8px 10px; border-radius: 12px; }
+    nav a:hover{ background: var(--soft); color: var(--ink); }
+
+    .cta{
+      display:flex;
+      gap:10px;
+      align-items:center;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: 14px;
+      font-weight: 500;
+      background: transparent;
+      color: var(--ink);
+      cursor:pointer;
+    }
+    .btn:hover{ background: var(--soft); }
+    .btn.primary{
+      background: var(--ink);
+      color: white;
+      border-color: rgba(11,27,42,.25);
+    }
+    .btn.primary:hover{ filter: brightness(1.02); }
+
+    /* Hero */
+    .hero{
+      padding: 64px 0 26px;
+    }
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 28px;
+      align-items:start;
+    }
+    .kicker{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: white;
+      color: var(--muted);
+      font-size: 13px;
+      width: fit-content;
+    }
+    .dot{ width:7px;height:7px;border-radius:999px;background: #2bb673; }
+    h1{
+      font-size: clamp(36px, 5vw, 56px);
+      line-height: 1.06;
+      margin: 14px 0 14px;
+      letter-spacing: -0.04em;
+      font-weight: 600;
+    }
+    .sub{
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--muted);
+      margin: 0 0 22px;
+      max-width: 60ch;
+    }
+    .heroActions{ display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+    .micro{
+      margin-top: 16px;
+      display:flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .card{
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+    .heroCard{
+      padding: 18px;
+    }
+    .heroCard h3{
+      margin: 0 0 10px;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+    .heroCard p{ margin:0; color: var(--muted); font-size: 14px; line-height: 1.55; }
+
+    .pillRow{ margin-top: 14px; display:flex; flex-wrap:wrap; gap:8px; }
+    .pill{
+      font-size: 12px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: color-mix(in srgb, white 70%, var(--soft) 30%);
+    }
+
+    /* Sections */
+    section{ padding: 54px 0; border-top: 1px solid var(--line); }
+    section:first-of-type{ border-top:none; }
+    .sectionHead{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:16px;
+      margin-bottom: 18px;
+    }
+    .sectionHead h2{
+      margin:0;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+      font-weight: 600;
+    }
+    .sectionHead p{ margin:0; color: var(--muted); max-width: 60ch; line-height: 1.7; }
+
+    .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .grid2{ display:grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
+
+    .feature{
+      padding: 18px;
+    }
+    .feature h3{ margin: 6px 0 8px; font-size: 15px; font-weight: 600; }
+    .feature p{ margin:0; color: var(--muted); line-height: 1.6; font-size: 14px; }
+
+    .icon{
+      width: 34px; height: 34px;
+      border-radius: 12px;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      display:grid;
+      place-items:center;
+      font-weight:600;
+      color: var(--ink);
+    }
+
+    /* Process */
+    .step{ padding: 18px; }
+    .step .num{ color: var(--muted); font-size: 12px; letter-spacing: .14em; text-transform: uppercase; }
+    .step h3{ margin: 8px 0 8px; font-size: 15px; font-weight: 600; }
+
+    /* Proof / Trust */
+    .trustBar{
+      margin-top: 10px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .trust{
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* Contact */
+    .contactWrap{ padding: 18px; }
+    form{ display:grid; gap: 12px; }
+    label{ font-size: 13px; color: var(--muted); }
+    input, textarea{
+      width:100%;
+      padding: 12px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: white;
+      font-family: inherit;
+      font-size: 14px;
+      outline:none;
+    }
+    input:focus, textarea:focus{ border-color: rgba(11,27,42,.35); box-shadow: 0 0 0 4px rgba(11,27,42,.06); }
+    textarea{ min-height: 120px; resize: vertical; }
+
+    footer{
+      padding: 26px 0 40px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .footerGrid{ display:flex; justify-content:space-between; gap: 16px; flex-wrap:wrap; }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .heroGrid{ grid-template-columns: 1fr; }
+      .grid3{ grid-template-columns: 1fr; }
+      .grid2{ grid-template-columns: 1fr; }
+      nav ul{ display:none; }
+    }
+
+    /* Small motion (Joyous-like subtle) */
+    @media (prefers-reduced-motion: no-preference){
+      .fadeUp{ opacity:0; transform: translateY(10px); transition: opacity .6s ease, transform .6s ease; }
+      .fadeUp.show{ opacity:1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- LocalBusiness schema (fill in phone/address/service area) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "TruLine Restoration Group",
+    "url": "https://truline-rg.pro",
+    "email": "yourname@truline-rg.pro",
+    "telephone": "+1-000-000-0000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "",
+      "addressRegion": "MS",
+      "postalCode": "",
+      "addressCountry": "US"
+    },
+    "areaServed": ["Mississippi", "Memphis Metro"],
+    "description": "Water damage mitigation and reconstruction. Documentation-first, insurance-ready." 
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="#top" aria-label="TruLine Restoration Group home">
+          <div class="logo">TL</div>
+          <div>
+            <strong>TruLine</strong> <span>Restoration Group</span>
+          </div>
+        </a>
+
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="cta">
+          <a class="btn" href="tel:+10000000000" id="callBtn">Call</a>
+          <a class="btn primary" href="#contact">Request assessment</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="container">
+      <section class="hero" style="border-top:none;">
+        <div class="heroGrid">
+          <div>
+            <div class="kicker"><span class="dot" aria-hidden="true"></span> 24/7 response • insurance-ready documentation</div>
+            <h1 class="fadeUp">Water damage mitigation—
+              <br />calm, precise, and documented.</h1>
+            <p class="sub fadeUp">We stabilize the loss, dry the structure, and rebuild with a clear scope. Clean reporting, professional communication, and work you can stand behind.</p>
+
+            <div class="heroActions fadeUp">
+              <a class="btn primary" href="#contact">Request assessment</a>
+              <a class="btn" href="#services">View services</a>
+            </div>
+
+            <div class="micro fadeUp">
+              <div>Licensed & Insured</div>
+              <div>Xactimate-ready estimates</div>
+              <div>Moisture logs + photo reports</div>
+            </div>
+          </div>
+
+          <aside class="card heroCard fadeUp" aria-label="Quick info">
+            <h3>What we do</h3>
+            <p>Emergency extraction, structural drying, controlled demo for drying access, and reconstruction—organized in a scope adjusters recognize.</p>
+            <div class="pillRow" aria-label="Highlights">
+              <span class="pill">Category & class documentation</span>
+              <span class="pill">Daily monitoring</span>
+              <span class="pill">Clear estimates</span>
+              <span class="pill">Separate MIT / RECON</span>
+            </div>
+
+            <div style="margin-top:16px; border-top:1px solid var(--line); padding-top:14px; display:grid; gap:8px;">
+              <div style="display:flex; justify-content:space-between; color:var(--muted); font-size:13px;">
+                <span>Service area</span><span><strong style="color:var(--ink)">MS + Memphis Metro</strong></span>
+              </div>
+              <div style="display:flex; justify-content:space-between; color:var(--muted); font-size:13px;">
+                <span>Email</span><span><strong style="color:var(--ink)">yourname@truline-rg.pro</strong></span>
+              </div>
+              <div style="display:flex; justify-content:space-between; color:var(--muted); font-size:13px;">
+                <span>Phone</span><span><strong style="color:var(--ink)">(000) 000‑0000</strong></span>
+              </div>
+              <p style="margin:6px 0 0; font-size:12px; color:var(--muted);">Replace placeholders with your real phone/email before publishing.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="sectionHead">
+          <div>
+            <h2 class="fadeUp">Services</h2>
+            <p class="fadeUp">A clean scope, delivered in two phases: mitigation first, then reconstruction once drying is complete.</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card feature fadeUp">
+            <div class="icon">1</div>
+            <h3>Mitigation</h3>
+            <p>Extraction, structural drying, moisture mapping, and controlled demo for drying access—documented daily until dry standard is met.</p>
+          </div>
+          <div class="card feature fadeUp">
+            <div class="icon">2</div>
+            <h3>Documentation</h3>
+            <p>Photo reports, equipment logs, and clear notes that support the scope. Carrier-normal language. Professional submission package.</p>
+          </div>
+          <div class="card feature fadeUp">
+            <div class="icon">3</div>
+            <h3>Reconstruction</h3>
+            <p>Drywall, paint, flooring, trim, cabinetry repairs, and finish work—scoped after drying to avoid surprises and underbids.</p>
+          </div>
+        </div>
+
+        <div class="trustBar">
+          <div class="trust fadeUp">Emergency response</div>
+          <div class="trust fadeUp">Moisture logs</div>
+          <div class="trust fadeUp">Xactimate estimate PDF</div>
+          <div class="trust fadeUp">Separate MIT/RECON estimates</div>
+        </div>
+      </section>
+
+      <section id="process">
+        <div class="sectionHead">
+          <div>
+            <h2 class="fadeUp">Process</h2>
+            <p class="fadeUp">Simple, consistent, and easy to follow—so homeowners and adjusters stay aligned.</p>
+          </div>
+        </div>
+
+        <div class="grid3">
+          <div class="card step fadeUp">
+            <div class="num">Step 01</div>
+            <h3>Assess</h3>
+            <p>We document source area, affected rooms, and establish a dry standard. Photos and readings start immediately.</p>
+          </div>
+          <div class="card step fadeUp">
+            <div class="num">Step 02</div>
+            <h3>Stabilize & Dry</h3>
+            <p>Extraction, equipment placement, and daily monitoring until materials return to pre-loss moisture levels.</p>
+          </div>
+          <div class="card step fadeUp">
+            <div class="num">Step 03</div>
+            <h3>Rebuild</h3>
+            <p>Once dry, we finalize scope and restore finishes to pre-loss condition—drywall, paint, flooring, trim, and more.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="documentation">
+        <div class="sectionHead">
+          <div>
+            <h2 class="fadeUp">Documentation-first</h2>
+            <p class="fadeUp">Our files are organized to reduce back-and-forth: moisture readings, equipment days, photos, and clear scope notes.</p>
+          </div>
+        </div>
+
+        <div class="grid2">
+          <div class="card feature fadeUp">
+            <div class="icon">✓</div>
+            <h3>What you receive</h3>
+            <p>Mitigation report, photo report, moisture log, equipment log, and estimate PDF. Reconstruction estimate submitted after drying.</p>
+          </div>
+          <div class="card feature fadeUp">
+            <div class="icon">⟂</div>
+            <h3>Clear separation</h3>
+            <p>We keep plumbing/cause repair, mitigation, and reconstruction clearly separated—so payment processing stays clean.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="sectionHead">
+          <div>
+            <h2 class="fadeUp">Contact</h2>
+            <p class="fadeUp">Tell us what happened and where. We’ll respond quickly with next steps.</p>
+          </div>
+        </div>
+
+        <div class="card contactWrap fadeUp">
+          <!-- NOTE: This is a simple mailto form (no backend). For a real form, use Formspree/Netlify/Azure Functions later. -->
+          <form id="contactForm">
+            <div class="grid2">
+              <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" placeholder="Homeowner / Contact" required />
+              </div>
+              <div>
+                <label for="phone">Phone</label>
+                <input id="phone" name="phone" placeholder="(###) ###-####" />
+              </div>
+            </div>
+            <div class="grid2">
+              <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="name@email.com" />
+              </div>
+              <div>
+                <label for="address">Property Address</label>
+                <input id="address" name="address" placeholder="Street, City, State" />
+              </div>
+            </div>
+            <div>
+              <label for="message">What happened?</label>
+              <textarea id="message" name="message" placeholder="Briefly describe the water loss and affected areas."></textarea>
+            </div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:center;">
+              <button type="submit" class="btn primary">Send message</button>
+              <a class="btn" href="mailto:yourname@truline-rg.pro">Email us</a>
+              <a class="btn" href="tel:+10000000000">Call now</a>
+            </div>
+            <p style="margin:6px 0 0; font-size:12px; color:var(--muted);">By submitting, you agree we may contact you about this request. Replace placeholders before publishing.</p>
+          </form>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footerGrid">
+          <div>
+            <div style="display:flex; align-items:center; gap:10px;">
+              <div class="logo" aria-hidden="true">TL</div>
+              <div>
+                <div style="font-weight:600; color:var(--ink)">TruLine Restoration Group</div>
+                <div>Water mitigation & reconstruction • Mississippi</div>
+              </div>
+            </div>
+          </div>
+          <div style="display:grid; gap:6px;">
+            <div><a href="#services">Services</a></div>
+            <div><a href="#process">Process</a></div>
+            <div><a href="#contact">Contact</a></div>
+          </div>
+          <div style="display:grid; gap:6px;">
+            <div><strong style="color:var(--ink)">Email:</strong> yourname@truline-rg.pro</div>
+            <div><strong style="color:var(--ink)">Phone:</strong> (000) 000‑0000</div>
+            <div style="max-width:36ch;">Replace placeholders with your business address, license, and insurance details as applicable.</div>
+          </div>
+        </div>
+        <div style="margin-top:18px;">© <span id="year"></span> TruLine Restoration Group. All rights reserved.</div>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Subtle fade-in on scroll
+    const els = document.querySelectorAll('.fadeUp');
+    const show = () => {
+      const vh = window.innerHeight;
+      els.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if(r.top < vh - 60) el.classList.add('show');
+      });
+    };
+    show();
+    window.addEventListener('scroll', show, {passive:true});
+
+    // Contact form -> mailto (no backend)
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      const subject = encodeURIComponent(`New website inquiry - ${name || 'TruLine'}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nPhone: ${phone}\nEmail: ${email}\nProperty Address: ${address}\n\nDetails:\n${message}`
+      );
+
+      // CHANGE THIS to your real email
+      const to = 'yourname@truline-rg.pro';
+      window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+    });
+
+    // TODO (before publish):
+    // 1) Replace placeholders: phone, email, address, service area.
+    // 2) Replace og:image (/og.jpg) and favicon.
+    // 3) If you want a real form (no mailto), connect Formspree/Netlify/Azure Function.
+  </script>
+</body>
+</html>
